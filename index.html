@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main-space">
+    <div>
+      <nav class="hiddennavbar">
+        <!--logo-->
+        <div id="logo">
+          <a href="#home">
+            <h1>ROHIT</h1>
+          </a>
+        </div>
+        <!--logo-->
+        <!--nav items-->
+        <div class="nav-item">
+          <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <form>
+              <input type="search" placeholder="Search" id="searchbar" onkeyup="searchFun()">
+            </form>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <!--nav items-->
+        </div>
+      </nav>
+      <div class="popup-cantainer">
+        <P>This is not found !!</P>
+        <button class="close">X</button>
+      </div>
+      <!--navbar-->
+      <div id="home"></div>
+      <div class="firstforimgandheading">
+        <div>
+          <div class="leftforheading">
+            <h1>Hi, I am <span>Rohit Bairagi</span></h1>
+            <p>I am a software development student at DDU-KK DAVV in Indore. </p>
+          </div>
+          <button id="gotoProjects">View Project</button>
+        </div>
+        <div class="rightforheading">
+          <img src="./assets/myphoto.jpeg" alt="Image">
+        </div>
+
+      </div>
+    </div>
+    <div class="line" id="about"></div>
+    <div class="info">
+      <h1 class="section-heading">About Me</h1>
+      <div class="info-cantainer">
+        <p>I'm Rohit Bairagi, currently pursuing a Bachelor of Vocation
+          (B.Voc) in Software Development at DDU KK, DAVV in indore
+          , I completed my high school education in my village at Abhinav
+          H.S.S. Runija, where I scored 85% in my 12th grade.
+          I have technical skills in HTML, CSS, JavaScript, Java
+          (where I've built a results making project using Core Java and JDBC), and
+          React (having developed projects using this framework). I have also created
+          my portfolio using HTML, CSS, and JavaScript.
+          My soft skills include teamwork and time management.
+          My strengths are self control and positive thinking.
+          My hobbies are reading a nd playing kabaddi.
+          My ambition is to become a software developer in one of the leading
+          companies in the industry.That is all about me. Thank you!</p>
+      </div>
+    </div>
+
+    <div class="line" id="Skills"></div>
+
+    <div class="education">
+      <h1 class="section-heading">Skills</h1>
+      <div class="skill-cantainer">
+        <div>
+          <p>HTML</p>
+        </div>
+        <div>
+          <p>CSS</p>
+        </div>
+        <div>
+          <p>JavaSript</p>
+        </div>
+        <div>
+          <p>Java</p>
+        </div>
+        <div>
+          <p>React</p>
+        </div>
+        <div>
+          <p>SQL</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="line" id="project"></div>
+    <div class="projects">
+      <h1 class="section-heading">Projects</h1>
+      <div class="card-cantainer">
+        <div class="card">
+          <img src="./assets/Library website.png" alt="">
+          <div>
+            <div><h4 class="item">Library Website</h4>
+              <p class="item">This is my Library Website UI-UX design.
+              </p></div>
+            <button class="item" id="library">View Project</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/sport-scout.png" alt="">
+          <div>
+            <h4 class="item">Sport Website</h4>
+            <p class="item">This is my first HTML website.
+            </p>
+            <button class="item" id="sport-scout">View Project</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/textutile.png" alt="">
+          <div>
+            <h4 class="item">TEXTUtile Website</h4>
+            <p class="item">This is my first React website, and I'm making it for practice.
+            </p>
+            <button class="item" id="textutile">View Project</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/transaction-app.png" alt="">
+          <div>
+            <h4 class="item">Transaction Website</h4>
+            <p class="item">"This is a Transaction website I'm building with React."
+            </p>
+            <button class="item" id="transaction-app">View Project</button>
+          </div>
+        </div>
+</div>
+</div>
+    <div class="line" id="hobb"></div>
+
+    <div class="hobbies">
+      <h1 class="section-heading">Hobbies</h1>
+      <div class="Hobbies-cantainer">
+        <div class="hobbies-child">
+          <h2>Kabaddi</h2>
+          <p>Exploring scenic trails and discovering the thrill of outdoor adventures.</p>
+        </div>
+        <div class="hobbies-child">
+          <h2>Books Reading</h2>
+          <p>Passionate about playing the guitar and creating original compositions.</p>
+        </div>
+        <div class="hobbies-child">
+          <h2>Video Games</h2>
+          <p>Enjoying immersive storytelling and strategy in various gaming genres.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="line" id="contact"></div>
+
+    <div class="divforfooter">
+      <footer>
+        <div class="footer-col">
+          <h3>Contact me</h3>
+          <div>
+            <h4>Email</h4>
+            <p>rohitbairagi193@gmail.com</p>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91-8349248453</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Follow me</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/rohit-bairagi-310b76354/">
+              <center><i class="fab fa-linkedin-in"></i>
+                <p>Linkedin</p>
+              </center>
+            </a>
+            <a href="https://github.com/RohitBairagi193">
+              <center>
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
+              </center>
+            </a>
+            <a href="#">
+              <center><i class="fab fa-twitter"></i>
+                <p>Twitter</p>
+              </center>
+            </a>
+            <a href="#">
+              <center><i class="fab fa-facebook-f"></i>
+                <p>Facebook</p>
+              </center>
+            </a>
+    
+          </div>
+        </div>
+      </footer>
+
+
+    </div>
+  </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
