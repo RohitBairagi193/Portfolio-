@@ -6,63 +6,66 @@ const closeBtn = document.querySelector('.close');
 //for scrolling
 
 function scrollItemByid(id) {
-    const valueforsearch =document.getElementById(id);
+    const valueforsearch = document.getElementById(id);
     {
-       if (valueforsearch) {
-        history.pushState(null,'',`#${id}`);
+        if (valueforsearch) {
+            history.pushState(null, '', `#${id}`);
 
-        valueforsearch.scrollIntoView({
-            behavior:'smooth',
-            block:'start'
-        });
-       };
-    };    
+            valueforsearch.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        };
+    };
 };
 
 // for searching
+let timeout;
 function searchFun() {
-    let searchInput = document.getElementById("searchbar").value.toLowerCase();
-    switch (searchInput) {
+    timeout = setTimeout(() => {
+        let searchInput = document.getElementById("searchbar").value.toLowerCase();
+        switch (searchInput) {
 
-        case "about":
-            scrollItemByid("about");
-            break;
-        case "home":
-            scrollItemByid("home");
-            break;
-        case "hobbies":
-            scrollItemByid("hobb");
-            break;
-        case "skills":
-            scrollItemByid("Skills");
-            break;
-        case "contact":
-            scrollItemByid("con");
-            break;
-        case "project":
-            scrollItemByid("project");
-            break;
-        case "library" || "library website" || "website":
-            scrollItemByid("library");
-            break;
-        case "sport scout" || "sport" || "sport website":
-            scrollItemByid("sport-scout");
-            break;
-        case "textutile" || "textutile website":
-            scrollItemByid("textutile");
-            break;
-        case "transaction app" || "transaction website"||"transaction":
-            scrollItemByid("transaction-app");
-            break;
-        default:
-            popup.classList.add('active');
-            setTimeout(() => {
-                popup.classList.remove('active');
-            }, 1000);
+            case "about":
+                scrollItemByid("about");
+                break;
+            case "home":
+                scrollItemByid("home");
+                break;
+            case "hobbies":
+                scrollItemByid("hobb");
+                break;
+            case "skills":
+                scrollItemByid("Skills");
+                break;
+            case "contact":
+                scrollItemByid("con");
+                break;
+            case "project":
+                scrollItemByid("project");
+                break;
+            case "library" || "library website" || "website":
+                scrollItemByid("library");
+                break;
+            case "sport scout" || "sport" || "sport website":
+                scrollItemByid("sport-scout");
+                break;
+            case "textutile" || "textutile website":
+                scrollItemByid("textutile");
+                break;
+            case "transaction app" || "transaction website" || "transaction":
+                scrollItemByid("transaction-app");
+                break;
+            default:
+                popup.classList.add('active');
+                setTimeout(() => {
+                    popup.classList.remove('active');
+                }, 1000);
 
-            break;
+                break;
 
-    }
+        }
+    }, 300);
 }
 
 searchInput.addEventListener('keypress', (event) => {
