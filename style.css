@@ -34,19 +34,19 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 30vw;
+    width: 26vw;
     height: 30vw;
     margin-top: 5%;
     border-radius: 5%;
-    box-shadow: #fff 1px 1px 10px;
     cursor: pointer;
 }
 
 .rightforheading img {
     max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    max-width: 98%;
     border-radius: 5%;
+    opacity: 0.9;
+    z-index: -2;
 }
 
 /* navbar */
@@ -245,6 +245,10 @@ form input {
         padding: 2em;
         text-align: center;
     }
+
+    .hobbies-child{
+        overflow: hidden;
+    }
 }
 
 @media (max-width:715px) {
@@ -256,17 +260,21 @@ form input {
         overflow: auto;
         margin-bottom: 1em;
     }
-.rightforheading {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 75vw;
-    height: 75vw;
-    margin-top: 5%;
-    border-radius: 5%;
-    box-shadow: #fff 1px 1px 10px;
-    cursor: pointer;
-}
+
+    .hobbies-child{
+        overflow: auto;
+    }
+
+    .rightforheading {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 75vw;
+        height: 80vw;
+        margin-top: 5%;
+        border-radius: 5%;
+        cursor: pointer;
+    }
 
 }
 
@@ -319,8 +327,9 @@ form input {
 .rightforheading img {
     max-height: 100%;
     max-width: 100%;
-    object-fit: contain;
     border-radius: 5%;
+    opacity: 0.9;
+    z-index: -2;
 }
 
 @keyframes span-side {
@@ -449,12 +458,17 @@ button:hover {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    width: 14.5em;
-    height: 9.5em;
+    width: 20em;
+    height: 12em;
     margin: 5px;
     border-radius: 10px;
     padding: 20px;
+    overflow: auto;
     background-color: #ffffff13;
+}
+
+.hobbies-child p {
+    text-align: center;
 }
 
 /* footer */

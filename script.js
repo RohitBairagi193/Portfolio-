@@ -21,39 +21,53 @@ function scrollItemByid(id) {
 
 // for searching
 let timeout;
+
 function searchFun() {
+    clearTimeout(timeout);
     timeout = setTimeout(() => {
         let searchInput = document.getElementById("searchbar").value.toLowerCase();
-        switch (searchInput) {
 
+        switch (searchInput) {
             case "about":
+            case "about me":
                 scrollItemByid("about");
                 break;
             case "home":
                 scrollItemByid("home");
                 break;
             case "hobbies":
+                case "hobby":
                 scrollItemByid("hobb");
                 break;
             case "skills":
+                case "skill":
                 scrollItemByid("Skills");
                 break;
             case "contact":
-                scrollItemByid("con");
+            case "contect":
+                scrollItemByid("contact");
                 break;
             case "project":
+                case "projects":
                 scrollItemByid("project");
                 break;
-            case "library" || "library website" || "website":
+            case "library":
+            case "library website":
+            case "website":
                 scrollItemByid("library");
                 break;
-            case "sport scout" || "sport" || "sport website":
+            case "sport scout":
+            case "sport":
+            case "sport website":
                 scrollItemByid("sport-scout");
                 break;
-            case "textutile" || "textutile website":
+            case "textutile":
+            case "textutile website":
                 scrollItemByid("textutile");
                 break;
-            case "transaction app" || "transaction website" || "transaction":
+            case "transaction app":
+            case "transaction website":
+            case "transaction":
                 scrollItemByid("transaction-app");
                 break;
             default:
@@ -61,12 +75,11 @@ function searchFun() {
                 setTimeout(() => {
                     popup.classList.remove('active');
                 }, 1000);
-
                 break;
-
         }
     }, 300);
 }
+
 
 searchInput.addEventListener('keypress', (event) => {
     searchFun();
