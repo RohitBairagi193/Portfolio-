@@ -107,6 +107,10 @@ document.getElementById('gotoProjects').addEventListener('click', function () {
 });
 
 //library website
+document.getElementById('ghardhundho').addEventListener('click', function () {
+    window.location.href = "https://ghardhundho-1600e.web.app/";
+});
+
 document.getElementById('library').addEventListener('click', function () {
     window.location.href = "https://www.figma.com/proto/s7mqgWc56O5DbuRbaOiWLA/Untitled?node-id=0-1&t=aGDT4nlWMVIOC2wQ-1";
 });
@@ -121,4 +125,11 @@ document.getElementById('textutile').addEventListener('click', function () {
 
 document.getElementById('transaction-app').addEventListener('click', function () {
     window.location.href = "https://transaction-app-ten.vercel.app/";
+});
+
+document.getElementById('gotoPortfolio').addEventListener('click', function () {
+    window.location.href = "https://rohitbairagi.vercel.app/";
+});
+document.getElementById('gotoLinkedIn').addEventListener('click', function () {
+    window.location.href = "https://www.linkedin.com/in/rohit-bairagi-310b76354";
 });
